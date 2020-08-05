@@ -7,8 +7,8 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 winit = "0.20"
-wgpu = "0.5"
+wgpu = { git = "https://github.com/gfx-rs/wgpu-rs.git", rev = "7087e3141c2982361fb6e8b171475485bad5a1a8" }
 futures = "0.3"
-rusty_shades = { git = "https://github.com/JCapucho/rusty-shades.git" }
+rusty_shades = { path = "../rusty_shades" }
 env_logger = "0.7"
 bytemuck = "1.2"
